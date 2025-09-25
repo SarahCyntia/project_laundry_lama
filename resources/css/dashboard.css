@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ===== Global ===== */
+body {
+  @apply bg-gray-100 font-sans text-gray-800;
+}
+
+/* ===== Cards Statistik ===== */
+.card {
+  @apply bg-white shadow rounded-2xl p-6;
+}
+.card p {
+  @apply text-gray-500 text-sm;
+}
+.card h2 {
+  @apply text-2xl font-bold;
+}
+
+/* ===== Table ===== */
+.table {
+  @apply w-full border-collapse text-sm;
+}
+.table th {
+  @apply text-left text-gray-600 border-b p-2;
+}
+.table td {
+  @apply p-2 border-b;
+}
+.table tr:hover {
+  @apply bg-gray-50;
+}
+
+/* ===== Status Badge ===== */
+.status-pending {
+  @apply px-2 py-1 text-xs rounded-full bg-yellow-100 text-yellow-700;
+}
+.status-completed {
+  @apply px-2 py-1 text-xs rounded-full bg-green-100 text-green-700;
+}
+.status-cancelled {
+  @apply px-2 py-1 text-xs rounded-full bg-red-100 text-red-700;
+}
